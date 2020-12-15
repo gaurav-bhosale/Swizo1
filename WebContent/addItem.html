@@ -1,0 +1,180 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Add Item</title>
+</head>
+	<body>
+		<form action="AddItem" method="POST">
+			Enter Dish Name:<input type="text" name="Name"/></br>
+			Select Category:<select name="CategoryId" id="CategoryId">
+							  <option value="1">Veg</option>
+							  <option value="2">Non-Veg</option>
+							</select><br>
+			Enter Price:<input type="text" name="Price"/></br>
+			Enter Discount (%):<input type="text" name="Discount"/></br>
+			<input type="submit" value="Add Item"/><br>
+			<a href="restroHome.html">Cancel</a>
+		</form>
+	</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .fixed-footer{
+		width: 100%;
+        position: fixed;        
+        background: #333;
+        padding: 10px 0;
+        color: #fff;
+    text-align: center;
+        bottom: 0;
+    } 
+    ul {
+  
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+  border-right:1px solid #bbb;
+}
+
+li:last-child {
+  border-right: none;
+}
+
+li a {
+  display: block;
+  color: rgba(255, 255, 255, 0.822);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: rgb(122, 120, 120);
+}
+.footer {
+    position: static;
+    left: 0;
+    bottom: 0;
+    color: white;
+    text-align: center;
+  background-color: #998c8c;
+  padding: 10px;
+  text-align: center;
+}
+body{
+    margin:0%;
+    padding: 0;
+    font-family: sans-serif;
+    background-image: url(https://image.shutterstock.com/image-photo/supermarket-aisle-empty-red-shopping-600w-541052647.jpg);
+}
+.cart{
+
+margin-top: auto;
+margin-left: 15%;
+background-color: rgb(228, 233, 241);
+color: rgb(216, 225, 233);
+top: 50%;
+position: relative;
+box-sizing: border-box;
+width: 35%;
+
+}
+p{
+    margin-left: 5%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    padding: 0 0 20px;
+    text-align: justify;
+    color: rgb(65, 60, 60);
+}
+h1{
+    margin-top: 1%;
+    color: black;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+}
+.textbox input[type="text"]{
+    
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+}
+.textbox input[type="submit"]:hover
+{
+    border:none;
+    outline: none;
+    height: 40px;
+    background-color: rgb(238, 52, 89);
+    cursor: pointer;
+    background: #333;
+}
+   </style>
+</head>
+	<body>
+	    <ul>
+	    	<li style ="float:left;"><a href="restroHome.html">Back</a></li>
+	      <li style ="float:right;margin-right: 2%;"><a href="Logout">Logout</a></li>
+	    </ul>
+	
+	     <div class="cart">
+	       <h1><br>
+	           Add New Item
+	       </h1>
+	     <form action="AddItem" method="POST">
+			<p>
+			    Dish Name
+			</p>
+			<input type="text" name="Name" placeholder="Cuisine" required style="margin-left: 5%;">
+			<p>
+			    Select category
+			</p>
+			<select name="CategoryId" id="CategoryId" style="margin-left: 5%;">
+			    <option value="1">VEG</option>
+			    <option value="2">Non-veg</option>
+			</select>
+			<p>
+			    Enter price
+			</p>
+			<input type="text" name="Price" placeholder="Price" required step="0.01" style="margin-left: 5%;" >
+			<p>
+			    Discount
+			</p>
+			<input type="text" name="Discount" placeholder="Discount (%)" step="0.01" style="margin-left: 5%;">
+			<br>
+			
+			<input type="submit" value="Add Item" style=" border:none;
+			
+			cursor: pointer;
+			background: rgb(38, 72, 228); width: 30% 30% 30%; margin-top: 2%; margin-bottom: 5%; padding: 15px 32px; display: inline-block; font-size: 16px; margin-left: 5%;" >
+			
+			
+			<input type="reset" value="reset" style="border:none;
+			
+			cursor: pointer;
+			background: rgb(216, 5, 5); width: 30% 30% 30%; margin-top: 2%; margin-bottom: 5%; padding: 15px 32px; display: inline-block; font-size: 16px; float:right; margin-right: 25%;"> 
+		
+		</form>
+    </div>
+    <div class="fixed-footer">
+        <div class="container">Copyright &copy; 2020 SWIZO</div>        
+    </div>
+</body>
+</html>
